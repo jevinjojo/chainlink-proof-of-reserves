@@ -1,0 +1,21 @@
+# Environment files - NEVER commit these
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+dist/
+.next/
+
+# Hardhat
+contracts/cache/
+contracts/artifacts/
+
+# CRE
+cre-workflows/proof-of-reserves/reserve-check/node_modules/
+cre-workflows/proof-of-reserves/reserve-check/.cache/
+
+# Misc
+.DS_Store
+*.log

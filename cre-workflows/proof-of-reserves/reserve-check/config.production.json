@@ -1,0 +1,7 @@
+{
+  "schedule": "0 * * * *",
+  "backendUrl": "https://carlton-berberidaceous-keiko.ngrok-free.dev",
+  "wallet": "0x818E9F62846fCC335a4090BAB9458748f34d5F28",
+  "claimed": 100.5,
+  "exchangeId": 1
+}
