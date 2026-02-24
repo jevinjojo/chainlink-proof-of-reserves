@@ -1,4 +1,4 @@
-# Proof of Reserves Verifier
+# Proof of Reserves Verifier 
 
 Automated proof of reserves verification using on-chain data and Chainlink CRE automation.
 
