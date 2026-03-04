@@ -19,7 +19,7 @@ export default function Home() {
               Real-time on-chain verification · Sepolia Testnet
             </p>
           </div>
-          <WalletConnectButton onConnected={setConnectedWallet} />
+          <WalletConnectButton onConnected={setConnectedWallet} onDisconnected={() => setConnectedWallet(null)} />
         </div>
 
         {/* Exchange Cards */}
@@ -28,7 +28,7 @@ export default function Home() {
           <ExchangeCard
             exchangeName="Binance (Demo)"
             wallet="0x818E9F62846fCC335a4090BAB9458748f34d5F28"
-            claimed={0.21}
+            claimed={0.19}
             exchangeId={1}
           />
           <ExchangeCard
@@ -43,8 +43,8 @@ export default function Home() {
             <ExchangeCard
               exchangeName="Your Wallet"
               wallet={connectedWallet}
-              claimed={100.5}
-              exchangeId={2}
+              claimed={0.19}
+              exchangeId={3}
             />
           )}
         </div>
