@@ -3,8 +3,10 @@
 import { useState } from "react";
 import ExchangeCard from "@/components/ExchangeCard";
 import WalletConnectButton from "@/components/WalletConnectButton";
+import { useWallet } from "@/hooks/useWallet";
 export default function Home() {
   const [connectedWallet, setConnectedWallet] = useState<string | null>(null);
+  const { wallet, connect, disconnect } = useWallet();
 
   return (
     <main className="min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 p-8 font-mono">
@@ -19,7 +21,29 @@ export default function Home() {
               Real-time on-chain verification · Sepolia Testnet
             </p>
           </div>
-          <WalletConnectButton onConnected={setConnectedWallet} onDisconnected={() => setConnectedWallet(null)} />
+          {/* Replace WalletConnectButton with direct hook usage */}
+          <div>
+            {wallet.address ? (
+              <div className="flex items-center gap-2">
+                <span className="px-4 py-2 rounded-lg font-mono bg-white text-slate-900 border-2 border-yellow-400 shadow-md">
+                  Connected: {wallet.address.slice(0, 6)}...{wallet.address.slice(-4)}
+                </span>
+                <button
+                  onClick={disconnect}
+                  className="px-4 py-2 rounded-lg font-mono bg-red-500 text-white hover:bg-red-400 transition-all"
+                >
+                  Disconnect
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={connect}
+                className="px-4 py-2 rounded-lg font-mono bg-green-600 text-white hover:bg-green-500 transition-all"
+              >
+                Connect Wallet
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Exchange Cards */}
