@@ -28,7 +28,7 @@ export default function Home() {
           <ExchangeCard
             exchangeName="Binance (Demo)"
             wallet="0x818E9F62846fCC335a4090BAB9458748f34d5F28"
-            claimed={0.19}
+            claimed={0.22}
             exchangeId={1}
           />
           <ExchangeCard
