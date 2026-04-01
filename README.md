@@ -3,7 +3,7 @@
 > **Automated, real-time proof of reserves verification using live on-chain data and Chainlink CRE automation.**
 
 [![Sepolia Testnet](https://img.shields.io/badge/Network-Sepolia%20Testnet-blue)](https://sepolia.etherscan.io)
-[![Chainlink CRE](https://img.shields.io/badge/Chainlink-CRE%20Automation-375BD2)](https://cre.chain.link)
+[![Chainlink CRE](https://img.shields.io/badge/Chainlink-CRE%20Automation-375BD2)](https://cre.chain.link) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **🌐 Live Demo:** [https://chainlink-proof-of-reserves.onrender.com](https://chainlink-proof-of-reserves.onrender.com)
