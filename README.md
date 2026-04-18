@@ -258,7 +258,7 @@ For the live demo, the frontend is configured with:
 4. Scroll to "On-Chain Stored" → see results written to ReserveOracle
 5. Check [Sepolia Etherscan](https://sepolia.etherscan.io/address/0x738CFBB63F0A6675638E862F6Ec3E5d52A95e13b) → find `triggerAlert` transactions and decode the input to see exact discrepancy messages
 
-**Note:** The demo wallet address and claimed reserves are simulated for demonstration purposes. The verification logic, on-chain writes, and discrepancy calculations run against **real Sepolia data**.
+**Note:** The demo wallet address and claimed reserves are simulated for demonstration purposes. The verification logic, on-chain writes, and discrepancy calculations run against **real Sepolia data**..
 
 ---
 
@@ -379,7 +379,7 @@ Workflow Simulation Result: {"verified":false,"discrepancyPct":99.79}
 | `ALERT_CONTRACT_ADDRESS` | AlertContract contract address | `0x738CFBB63F0A6675638E862F6Ec3E5d52A95e13b` |
 | `PORT` | Backend port (optional) | `3000` |
 
-### Frontend `.env.local`
+### Frontend `.env.local` 
 
 | Variable | Description | Example |
 |----------|-------------|---------|
