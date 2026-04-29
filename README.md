@@ -10,7 +10,7 @@
 
 ---
 
-## Quick Start
+## Quick Start!
 
 1. **Visit the live demo:** [https://chainlink-proof-of-reserves.onrender.com](https://chainlink-proof-of-reserves.onrender.com)
 2. **Connect MetaMask** (Sepolia Testnet)
